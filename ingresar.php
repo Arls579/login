@@ -17,7 +17,7 @@ if(isset($_POST['ingresar'])){
             var_dump($password);
             
             if(password_verify($password, $contraE)){
-                $consulta = "SELECT * FROM registros WHERE nombre = '$name'";
+                $consulta = "SELECT * FROM datos WHERE nombre = '$name'";
                 $resultado = mysqli_query($conexion, $consulta);
                 if(!$resultadoC){
                    
